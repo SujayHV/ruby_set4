@@ -1,10 +1,10 @@
-module 4
+module Module1
 
-	def 1
+	def NUMBER_1
 		puts "I am number 1"
 	end
 
-	def 3
+	def NUMBER_3
 		puts "I am number 3"
 	end
 
@@ -15,9 +15,11 @@ module 4
 end
 
 
-class 4
-	include 4
+class Class1
+	include Module1
 end
 
-number = 4.new
-number.1
+number = Class1.new
+number.NUMBER_1
+number.NUMBER_3
+number.NUMBER_4

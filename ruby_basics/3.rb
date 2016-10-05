@@ -6,19 +6,21 @@
 
 class Lottery
 
-  def initialize
+  def initialize(value)
+  	@a=number
   end
 
-  def method_name
+  def lotteryprize
+  	puts "you have won a #{@a} Shoes"
     
   end
 end
 
-@gifts ={
-	key, value,
-	key,value
-}
+gifts ={"1" => "ADIDAS", "2" => "NIKE","3" => "WOODLANDS", "4" => "PUMA","5" => "PROVOUGE", "6" => "GLOBALITE","7" => "NORTHSTAR", "8" => "DIESEL","9" => "REEBOK", "10" => "CONVERSE"}
 
-number = 'Inut From the user'
-prize = Lottery.new(number)
-puts prize
+puts "Enter a number from 1 to 10"
+number = gets
+# value=gets gifts.fetch['number']
+value=gifts.fetch('number')
+prize = Lottery.new(value)
+prize.lotteryprize
