@@ -5,14 +5,25 @@
 puts"Fibonacci series"
 
 def fib_upto(max)
+<<<<<<< HEAD
   i1, i2 = 0, 1
   while i1 <= max
     puts i1
+=======
+  i1, i2 = 1, 1
+  while i1 <= max
+    yield i1
+>>>>>>> af2cd408213889710ec56e4de22ca67df3d445fb
     i1, i2 = i2, i1+i2
   end
 end
 
+<<<<<<< HEAD
 fib_upto(7) 
+=======
+fib_upto(7) {|f| puts f, " "}
+
+>>>>>>> af2cd408213889710ec56e4de22ca67df3d445fb
 
 
 

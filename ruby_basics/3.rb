@@ -6,6 +6,7 @@
 
 class Lottery
 
+<<<<<<< HEAD
   def initialize(list,num)
   	@a=list
   	@num=num
@@ -13,10 +14,19 @@ class Lottery
 
   def lotteryprize
   	puts "you have won a #{@a[@num]} Shoes"
+=======
+  def initialize(value)
+  	@a=number
+  end
+
+  def lotteryprize
+  	puts "you have won a #{@a} Shoes"
+>>>>>>> af2cd408213889710ec56e4de22ca67df3d445fb
     
   end
 end
 
+<<<<<<< HEAD
 gifts ={1 =>"ADIDAS", 2 =>"NIKE",3 =>"WOODLANDS", 4 =>"PUMA",5 =>"PROVOUGE", 
 	6 =>"GLOBALITE",7 =>"NORTHSTAR", 8 =>"DIESEL",9 =>"REEBOK", 10 =>"CONVERSE"}
 
@@ -25,4 +35,13 @@ number = gets.to_i
 # value=gets gifts.fetch['number']
 
 prize = Lottery.new(gifts,number)
+=======
+gifts ={"1" => "ADIDAS", "2" => "NIKE","3" => "WOODLANDS", "4" => "PUMA","5" => "PROVOUGE", "6" => "GLOBALITE","7" => "NORTHSTAR", "8" => "DIESEL","9" => "REEBOK", "10" => "CONVERSE"}
+
+puts "Enter a number from 1 to 10"
+number = gets
+# value=gets gifts.fetch['number']
+value=gifts.fetch('number')
+prize = Lottery.new(value)
+>>>>>>> af2cd408213889710ec56e4de22ca67df3d445fb
 prize.lotteryprize
