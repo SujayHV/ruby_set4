@@ -30,7 +30,6 @@
 #                        Thomas
 
 
-<<<<<<< HEAD
 class Parents
  def fatherName
    print "Thomas "
@@ -80,40 +79,4 @@ obj.lastName
 puts""
 print "fullname-->"
 obj.fullName
-
-=======
-class Father  
-  def lastName
-    puts "lastName ->Thomas"
-  end
-end  
-
-
-class Mother 
-  def secondName
-   puts "secondName ->Martha" 
-  end
-end  
-
-
-class Son1 < Father 
-  def firstName  
-    puts "firstName -> Bruce" 
-  end
-end
-
-
-class Son2 < Mother
-  def fullName
-    puts "fullName ->My name is Bruce Martha Thomas"
-   
-  end
-end
-a=Son1.new
-b=Son2.new
-a.firstName()
-b.secondName()
-a.lastName()
-b.fullName()
->>>>>>> af2cd408213889710ec56e4de22ca67df3d445fb
 
